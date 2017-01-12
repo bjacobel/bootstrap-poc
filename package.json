@@ -1,0 +1,30 @@
+{
+  "name": "bootstrap-poc",
+  "version": "0.0.0",
+  "description": "tiny self-contained UI for testing bootstrap 3 in edx-platform",
+  "main": "index.js",
+  "repository": "github.com/bjacobel/bootstrap-poc",
+  "author": "Brian Jacobel <bjacobel@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "html-webpack-plugin": "^2.26.0",
+    "node-sass": "^4.2.0",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.0-rc.4",
+    "webpack-dev-server": "^2.2.0-rc.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "not IE 10"]
+        },
+        "modules": false
+      }
+    ],
+    "react"
+  ]
+}
