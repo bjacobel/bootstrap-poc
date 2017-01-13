@@ -7,7 +7,7 @@ const isProd = process.env.NODE_ENV === 'production';
 const wpconfig = {
   entry: {
     main: [
-      './index.js',
+      './src/index.js',
     ],
   },
   output: {
@@ -54,6 +54,10 @@ const wpconfig = {
   },
   resolve: {
     extensions: ['.js', '.json', '.scss'],
+    modules: [
+      path.resolve(__dirname, 'node_modules'),
+      path.resolve(__dirname, path.join('node_modules', 'bootstrap-sass', 'assets', 'stylesheets'))
+    ]
   },
   plugins: [
     new webpack.NoEmitOnErrorsPlugin(),
@@ -69,9 +73,11 @@ const wpconfig = {
       options: {
         sassLoader: {
           includePaths: [
-            path.resolve(__dirname, 'node_modules')
-          ]
+            path.resolve(__dirname, 'node_modules'),
+            path.resolve(__dirname, path.join('node_modules', 'bootstrap-sass', 'assets', 'stylesheets'))
+          ],
         },
+        context: '/',
       }
     })
   ],
@@ -89,7 +95,6 @@ if (!isProd) {
   ];
 } else {
   wpconfig.plugins = [
-    new ExtractTextPlugin('[name].css'),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
     }),

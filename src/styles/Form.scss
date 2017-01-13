@@ -1,0 +1,10 @@
+@import "bs-root";
+
+@import 'bootstrap/forms';
+@import 'bootstrap/dropdowns';
+@import 'bootstrap/buttons';
+@import 'bootstrap/alerts';
+
+.form-actions button {
+  margin-right: $padding-base-horizontal;
+}

@@ -2,7 +2,7 @@
   "name": "bootstrap-poc",
   "version": "0.0.0",
   "description": "tiny self-contained UI for testing bootstrap 3 in edx-platform",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "github.com/bjacobel/bootstrap-poc",
   "author": "Brian Jacobel <bjacobel@gmail.com>",
   "license": "MIT",
