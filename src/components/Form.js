@@ -44,8 +44,8 @@ export default class Form extends Component {
           <label className="col-md-2 control-label" htmlFor="select-per-day">Times per day</label>
         </div>
         <div className="form-group form-actions">
-          <button type="submit" className="btn btn-primary btn-lg">Submit</button>
-          <button type="button" className="btn btn-default btn-lg">Cancel</button>
+          <button type="submit" className="btn btn-primary">Submit</button>
+          <button type="button" className="btn btn-default">Cancel</button>
         </div>
       </form>
     );

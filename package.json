@@ -26,6 +26,7 @@
     "webpack-dev-server": "^2.2.0-rc.0"
   },
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "prepublish": "webpack"
   }
 }

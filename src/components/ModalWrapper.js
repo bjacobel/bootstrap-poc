@@ -35,7 +35,6 @@ export default class ModalWrapper extends Component {
       <div>
         <Button
           bsStyle="primary"
-          bsSize="large"
           onClick={this.open}
         >
           Launch modal
