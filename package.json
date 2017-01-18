@@ -27,6 +27,6 @@
   },
   "scripts": {
     "start": "webpack-dev-server",
-    "prepublish": "webpack"
+    "prepublish": "NODE_ENV=production webpack"
   }
 }
