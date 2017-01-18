@@ -13,11 +13,11 @@ $gray-darker:            rgb(17, 17, 17);
 $gray-light:             rgb(160, 160, 160);
 $gray-lighter:           rgb(217, 217, 217);
 
-$brand-primary:         rgb(0, 117, 180);
-$brand-success:         rgb(0, 129, 0);
-$brand-info:            rgb(194, 56, 125);
-$brand-warning:         rgb(255, 192, 31);
-$brand-danger:          rgb(178, 6, 16);
+$brand-primary:          rgb(0, 117, 180);
+$brand-success:          rgb(0, 129, 0);
+$brand-info:             rgb(194, 56, 125);
+$brand-warning:          rgb(255, 192, 31);
+$brand-danger:           rgb(178, 6, 16);
 
 
 //== Scaffolding
@@ -33,12 +33,16 @@ $text-color:            $gray-darker;
 //## Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-base:        $font-family-sans-serif;
 $font-size-base:          16px;
 
 
 //== Components
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+$padding-base-vertical:     10px;
+$padding-base-horizontal:   16px;
 
 $border-radius-base:        3px;
 $border-radius-large:       5px;
@@ -64,18 +68,45 @@ $btn-warning-border:             $btn-warning-bg;
 $btn-danger-border:              $btn-danger-bg;
 
 
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+$state-success-text:             $brand-success;
+$state-success-bg:               $body-bg;
+$state-success-border:           $brand-success;
+
+$state-info-text:                $brand-info;
+$state-info-bg:                  $body-bg;
+$state-info-border:              $brand-info;
+
+$state-warning-text:             $brand-warning;
+$state-warning-bg:               $body-bg;
+$state-warning-border:           $brand-warning;
+
+$state-danger-text:              $brand-danger;
+$state-danger-bg:                $body-bg;
+$state-danger-border:            $brand-danger;
+
+
 //== Alerts
 //
 //## Define alert colors, border radius, and padding.
 
+$alert-border-radius:         0;
+
 $alert-success-bg:            $body-bg;
 $alert-success-text:          $text-color;
+$alert-success-border:        $state-success-border;
 
 $alert-info-bg:               $body-bg;
 $alert-info-text:             $text-color;
+$alert-info-border:           $state-info-border;
 
 $alert-warning-bg:            $body-bg;
 $alert-warning-text:          $text-color;
+$alert-warning-border:        $state-warning-border;
 
 $alert-danger-bg:             $body-bg;
 $alert-danger-text:           $text-color;
+$alert-danger-border:         $state-danger-border;
