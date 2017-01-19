@@ -18,3 +18,6 @@
 // Utility classes
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
+
+// PayPal's accessibility plugin: https://github.com/paypal/bootstrap-accessibility-plugin
+@import "~bootstrap-accessibility-plugin/plugins/css/bootstrap-accessibility.css"

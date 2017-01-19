@@ -7,6 +7,7 @@
   "author": "Brian Jacobel <bjacobel@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "bootstrap-accessibility-plugin": "^1.0.2",
     "bootstrap-sass": "^3.3.7",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
