@@ -1,6 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 
+@import 'bootstrap-root';
+@import 'bootstrap/buttons';
+@import 'bootstrap/forms';
+
 .app {
   max-width: 800px;
   margin: 0 auto;
+
+  & > div,
+  & > button {
+    margin-bottom: $padding-large-vertical;
+  }
 }
+
+.sr-only {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  background: #fff;
+  color: #000;
+  position: absolute;
+  margin: -1px;
+  height: 1px;
+  width: 1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  /* ensure there are spaces in sr text */
+  word-wrap: normal;
+}
+
+/*rtl:begin:ignore*/
+.no-rtl {
+  direction: ltr;
+  text-align: left;
+}
+/*rtl:end:ignore*/

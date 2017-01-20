@@ -1,0 +1,21 @@
+@import "bootstrap-root";
+
+@import 'bootstrap/buttons';
+@import 'bootstrap/forms';
+
+.search-box {
+  input.form-control {
+    height: 44px;
+  }
+
+  .search-button {
+    border-radius: 0 $border-radius-base $border-radius-base 0;
+  }
+}
+
+.search-wrapper {
+  & > button,
+  & > div {
+    margin-right: $padding-base-horizontal;
+  }
+}

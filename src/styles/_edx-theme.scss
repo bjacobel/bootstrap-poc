@@ -44,6 +44,15 @@ $font-size-base:          16px;
 $padding-base-vertical:     10px;
 $padding-base-horizontal:   16px;
 
+$padding-large-vertical:    14px;
+$padding-large-horizontal:  20px;
+
+$padding-small-vertical:    9px;
+$padding-small-horizontal:  14px;
+
+$padding-xs-vertical:       5px;
+$padding-xs-horizontal:     9px;
+
 $border-radius-base:        3px;
 $border-radius-large:       5px;
 $border-radius-small:       2px;
@@ -66,6 +75,20 @@ $btn-info-border:                $btn-info-bg;
 $btn-warning-border:             $btn-warning-bg;
 
 $btn-danger-border:              $btn-danger-bg;
+
+
+//== Forms
+//
+//##
+
+// TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
+//** Default `.form-control` border radius
+// This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
+$input-border-radius:            0;
+//** Large `.form-control` border radius
+$input-border-radius-large:      0;
+//** Small `.form-control` border radius
+$input-border-radius-small:      0;
 
 
 //== Form states and alerts

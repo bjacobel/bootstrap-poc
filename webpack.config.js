@@ -21,6 +21,7 @@ const wpconfig = {
     rules: [
       {
         test: /\.js$/,
+        include: path.join(__dirname, 'src'),
         use: 'babel-loader',
       },
       {
@@ -37,6 +38,7 @@ const wpconfig = {
               sourceMap: true,
             },
           },
+          { loader: 'postcss-loader' },
           { loader: 'sass-loader' },
         ]
       },
