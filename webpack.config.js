@@ -25,17 +25,14 @@ const wpconfig = {
         use: 'babel-loader',
       },
       {
-        test: /.json$/,
-        use: 'json-loader',
-      },
-      {
         test: /\.scss$/,
         loader: [
           { loader: 'style-loader' },
           {
             loader: 'css-loader',
-            query: {
-              sourceMap: true,
+            options: {
+              sourceMap: !isProd,
+              minimize: isProd
             },
           },
           { loader: 'postcss-loader' },
