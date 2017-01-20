@@ -29,3 +29,10 @@
   /* ensure there are spaces in sr text */
   word-wrap: normal;
 }
+
+/*rtl:begin:ignore*/
+.no-rtl {
+  direction: ltr;
+  text-align: left;
+}
+/*rtl:end:ignore*/

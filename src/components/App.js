@@ -27,6 +27,9 @@ export default class App extends Component {
         <ModalWrapper />
         <SearchBox />
         <Button bsStyle="warning" onClick={ this.toggleDir }>Toggle RTL/LTR</Button>
+        <pre className="no-rtl">
+          This code block won't be flipped to RTL.
+        </pre>
       </div>
     );
   }
