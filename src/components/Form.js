@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Checkbox, FormGroup } from 'react-bootstrap';
 
 import '../styles/Form.scss';
 
@@ -24,12 +25,9 @@ export default class Form extends Component {
           <span id="helpBlock1" className="help-block">This input has an error.</span>
         </div>
         <div className="form-group">
-          <div className="checkbox">
-            <label>
-              <input type="checkbox" />
-              Recieve email
-            </label>
-          </div>
+          <Checkbox defaultChecked>
+            Recieve Email
+          </Checkbox>
         </div>
         <div className="form-group row">
           <div className="col-xs-12 col-md-10">
