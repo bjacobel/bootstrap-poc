@@ -1,9 +1,8 @@
 // Core variables and mixins
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
+@import "bootstrap/scss/custom";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/print";
 
 // Theming
-@import "theme";
-
-// PayPal's accessibility plugin: https://github.com/paypal/bootstrap-accessibility-plugin
-@import "~bootstrap-accessibility-plugin/plugins/css/bootstrap-accessibility.css"
+@import "theme-v4";

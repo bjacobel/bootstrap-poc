@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from 'react-bootstrap/lib/Button';
+import { Button } from 'reactstrap';
 
 import '../styles/SearchBox.scss';
 
