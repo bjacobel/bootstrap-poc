@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Checkbox, FormGroup } from 'react-bootstrap';
+import Checkbox from 'react-bootstrap/lib/Checkbox';
+import FormGroup from 'react-bootstrap/lib/FormGroup';
 
 import '../styles/Form.scss';
 

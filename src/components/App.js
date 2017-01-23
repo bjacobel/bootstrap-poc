@@ -4,7 +4,7 @@ import '../styles/App.scss';
 import Form from './Form';
 import ModalWrapper from './ModalWrapper';
 import SearchBox from './SearchBox';
-import { Button } from 'react-bootstrap';
+import Button from 'react-bootstrap/lib/Button';
 
 export default class App extends Component {
   componentWillMount() {

@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { Modal, Popover, Tooltip, Button, OverlayTrigger } from 'react-bootstrap';
+import Button from 'react-bootstrap/lib/Button';
+import Modal from 'react-bootstrap/lib/Modal';
+import OverlayTrigger from 'react-bootstrap/lib/OverlayTrigger';
+import Popover from 'react-bootstrap/lib/Popover';
+import Tooltip from 'react-bootstrap/lib/Tooltip';
 
 import '../styles/ModalWrapper.scss';
 
