@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
-import { Alert, Button, Input, FormGroup, Form, FormFeedback, Label, Col } from 'reactstrap';
+import Alert from 'reactstrap/lib/Alert';
+import Button from 'reactstrap/lib/Button';
+import Col from 'reactstrap/lib/Col';
+import Form from 'reactstrap/lib/Form';
+import FormFeedback from 'reactstrap/lib/FormFeedback';
+import FormGroup from 'reactstrap/lib/FormGroup';
+import Input from 'reactstrap/lib/Input';
+import Label from 'reactstrap/lib/Label';
 
 import '../styles/FormWrapper.scss';
 

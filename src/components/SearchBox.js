@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import Button from 'reactstrap/lib/Button';
+import Form from 'reactstrap/lib/Form';
+import FormGroup from 'reactstrap/lib/FormGroup';
+import Input from 'reactstrap/lib/Input';
+import Label from 'reactstrap/lib/Label';
+
 
 import '../styles/SearchBox.scss';
 

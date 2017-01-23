@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Button from 'reactstrap/lib/Button';
+import Container from 'reactstrap/lib/Container';
 
 import '../styles/App.scss';
 import FormWrapper from './FormWrapper';
 import ModalWrapper from './ModalWrapper';
 import SearchBox from './SearchBox';
-import { Button, Container } from 'reactstrap';
 
 export default class App extends Component {
   componentWillMount() {
