@@ -20,14 +20,19 @@ export default class App extends Component {
   }
 
   render () {
-    document.querySelector('html').setAttribute('dir', this.state.dir);
+    let rtlToggle;
+
+    if (process.env.NODE_ENV === 'development') {
+      document.querySelector('html').setAttribute('dir', this.state.dir);
+      rtlToggle = <Button color="warning" onClick={ this.toggleDir }>Toggle RTL/LTR</Button>;
+    }
 
     return (
       <Container className="app">
         <FormWrapper />
         <ModalWrapper />
         <SearchBox />
-        <Button color="warning" onClick={ this.toggleDir }>Toggle RTL/LTR</Button>
+        { rtlToggle }
         <pre className="no-rtl">
           This code block won't be flipped to RTL.
         </pre>
