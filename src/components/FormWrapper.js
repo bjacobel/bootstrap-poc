@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Alert, Button, Input, FormGroup, Form, FormFeedback, Label } from 'reactstrap';
+import { Alert, Button, Input, FormGroup, Form, FormFeedback, Label, Col } from 'reactstrap';
 
 import '../styles/FormWrapper.scss';
 
@@ -28,7 +28,7 @@ export default class FormWrapper extends Component {
           <FormFeedback>This input has an error.</FormFeedback>
         </FormGroup>
 
-        <FormGroup check row>
+        <FormGroup check>
           <Label check>
             <Input type="checkbox" />
             Recieve Email
@@ -36,14 +36,18 @@ export default class FormWrapper extends Component {
         </FormGroup>
 
         <FormGroup row>
-          <Input sm={ 10 } type="select">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </Input>
-          <Label sm={ 2 }>Times per day</Label>
+          <Col md={ 10 }>
+            <Input type="select">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </Input>
+          </Col>
+          <Col md={ 2 }>
+            <Label>Times per day</Label>
+          </Col>
         </FormGroup>
 
         <FormGroup>

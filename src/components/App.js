@@ -4,7 +4,7 @@ import '../styles/App.scss';
 import FormWrapper from './FormWrapper';
 import ModalWrapper from './ModalWrapper';
 import SearchBox from './SearchBox';
-import { Button } from 'reactstrap';
+import { Button, Container } from 'reactstrap';
 
 export default class App extends Component {
   componentWillMount() {
@@ -22,7 +22,7 @@ export default class App extends Component {
     document.querySelector('html').setAttribute('dir', this.state.dir);
 
     return (
-      <div className="app">
+      <Container className="app">
         <FormWrapper />
         <ModalWrapper />
         <SearchBox />
@@ -30,7 +30,7 @@ export default class App extends Component {
         <pre className="no-rtl">
           This code block won't be flipped to RTL.
         </pre>
-      </div>
+      </Container>
     );
   }
 }
