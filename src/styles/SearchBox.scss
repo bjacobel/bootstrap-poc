@@ -10,8 +10,9 @@
 }
 
 .search-wrapper {
-  & > button,
-  & > div {
+  margin-bottom: $form-group-margin-bottom;
+
+  & > button {
     margin-right: $btn-padding-x;
   }
 }

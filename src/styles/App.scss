@@ -2,13 +2,13 @@
 
 @import 'bootstrap/base';
 
-@import 'bootstrap/scss/utilities';
 @import 'bootstrap/scss/buttons';
 @import 'bootstrap/scss/forms';
 
 .app {
   max-width: 800px;
   margin: 0 auto;
+  font-family: $font-family-base;
 
   & > div,
   & > button {
@@ -30,6 +30,10 @@
   overflow: hidden;
   /* ensure there are spaces in sr text */
   word-wrap: normal;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /*rtl:begin:ignore*/

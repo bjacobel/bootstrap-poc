@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import '../styles/App.scss';
-import Form from './Form';
+import FormWrapper from './FormWrapper';
 import ModalWrapper from './ModalWrapper';
 import SearchBox from './SearchBox';
 import { Button } from 'reactstrap';
@@ -23,7 +23,7 @@ export default class App extends Component {
 
     return (
       <div className="app">
-        <Form />
+        <FormWrapper />
         <ModalWrapper />
         <SearchBox />
         <Button color="warning" onClick={ this.toggleDir }>Toggle RTL/LTR</Button>
