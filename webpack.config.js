@@ -56,7 +56,6 @@ const wpconfig = {
     extensions: ['.js', '.json', '.scss'],
     modules: [
       path.resolve(__dirname, 'node_modules'),
-      path.resolve(__dirname, path.join('node_modules', 'bootstrap-sass', 'assets', 'stylesheets'))
     ]
   },
   plugins: [
@@ -74,7 +73,6 @@ const wpconfig = {
         sassLoader: {
           includePaths: [
             path.resolve(__dirname, 'node_modules'),
-            path.resolve(__dirname, path.join('node_modules', 'bootstrap-sass', 'assets', 'stylesheets'))
           ],
         },
         context: '/',

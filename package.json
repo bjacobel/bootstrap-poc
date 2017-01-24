@@ -7,11 +7,12 @@
   "author": "Brian Jacobel <bjacobel@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bootstrap-accessibility-plugin": "^1.0.2",
-    "bootstrap-sass": "^3.3.7",
+    "bootstrap": "4.0.0-alpha.6",
     "react": "^15.4.2",
-    "react-bootstrap": "^0.30.7",
-    "react-dom": "^15.4.2"
+    "react-addons-css-transition-group": "^15.4.2",
+    "react-addons-transition-group": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "reactstrap": "^4.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.6.1",

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Button from 'reactstrap/lib/Button';
+import Container from 'reactstrap/lib/Container';
 
 import '../styles/App.scss';
-import Form from './Form';
+import FormWrapper from './FormWrapper';
 import ModalWrapper from './ModalWrapper';
 import SearchBox from './SearchBox';
-import Button from 'react-bootstrap/lib/Button';
 
 export default class App extends Component {
   componentWillMount() {
@@ -19,18 +20,23 @@ export default class App extends Component {
   }
 
   render () {
-    document.querySelector('html').setAttribute('dir', this.state.dir);
+    let rtlToggle;
+
+    if (process.env.NODE_ENV === 'development') {
+      document.querySelector('html').setAttribute('dir', this.state.dir);
+      rtlToggle = <Button color="warning" onClick={ this.toggleDir }>Toggle RTL/LTR</Button>;
+    }
 
     return (
-      <div className="app">
-        <Form />
+      <Container className="app">
+        <FormWrapper />
         <ModalWrapper />
         <SearchBox />
-        <Button bsStyle="warning" onClick={ this.toggleDir }>Toggle RTL/LTR</Button>
+        { rtlToggle }
         <pre className="no-rtl">
           This code block won't be flipped to RTL.
         </pre>
-      </div>
+      </Container>
     );
   }
 }

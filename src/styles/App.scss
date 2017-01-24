@@ -2,16 +2,18 @@
 
 @import 'bootstrap/base';
 @import 'bootstrap/utilities';
-@import 'bootstrap/buttons';
-@import 'bootstrap/forms';
+
+@import 'bootstrap/scss/buttons';
+@import 'bootstrap/scss/forms';
 
 .app {
   max-width: 800px;
   margin: 0 auto;
+  font-family: $font-family-base;
 
   & > div,
   & > button {
-    margin-bottom: $padding-large-vertical;
+    margin-bottom: $form-group-margin-bottom;
   }
 }
 
@@ -29,6 +31,10 @@
   overflow: hidden;
   /* ensure there are spaces in sr text */
   word-wrap: normal;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /*rtl:begin:ignore*/

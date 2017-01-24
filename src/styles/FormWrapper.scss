@@ -1,0 +1,10 @@
+@import "bootstrap/base";
+
+@import 'bootstrap/scss/forms';
+@import 'bootstrap/scss/dropdown';
+@import 'bootstrap/scss/buttons';
+@import 'bootstrap/scss/alert';
+
+.form-group button {
+  margin-right: $btn-padding-x;
+}
